@@ -5,10 +5,88 @@ import javax.naming.LimitExceededException;
 public class Cell {
     private LinkedList<Character> characters;
     private String terrain;
+    private int x;
+    private int y;
 
-    public Cell() {
+    public Cell(int x, int y, String terrain) {
         characters = new LinkedList<>();
         terrain = null;
+    }
+
+    public int getOgresNummber() {
+        int ogresCounter = 0;
+
+        for(Character character : characters) {
+            if(character instanceof Ogre) {
+                ogresCounter++;
+            }
+        }
+
+        return ogresCounter;
+    }
+
+    public int getElfsNummber() {
+        int elfsCounter = 0;
+
+        for(Character character : characters) {
+            if(character instanceof Elf) {
+                elfsCounter++;
+            }
+        }
+
+        return elfsCounter;
+    }
+
+    public int getDwarfsNummber() {
+        int dwarfsCounter = 0;
+
+        for(Character character : characters) {
+            if(character instanceof Dwarf) {
+                dwarfsCounter++;
+            }
+        }
+
+        return dwarfsCounter;
+    }
+
+    public double getDayDefence() {
+        double totalDefence = 0;
+
+        for(Character character : characters) {
+            totalDefence += character.getDayDefence(terrain);
+        }
+
+        return totalDefence;
+    }
+
+    public double getNightDefence() {
+        double totalDefence = 0;
+
+        for(Character character : characters) {
+            totalDefence += character.getNightDefence(terrain);
+        }
+
+        return totalDefence;
+    }
+
+    public double getDayAttack() {
+        double totalAttack = 0;
+
+        for(Character character : characters) {
+            totalAttack += character.getDayAttack(terrain);
+        }
+
+        return totalAttack;
+    }
+
+    public double getNightAttack() {
+        double totalAttack = 0;
+
+        for(Character character : characters) {
+            totalAttack += character.getNightAttack(terrain);
+        }
+
+        return totalAttack;
     }
 
     public void addCharacter(Character character) throws LimitExceededException {
