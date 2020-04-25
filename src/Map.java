@@ -21,7 +21,7 @@ public class Map {
 
         for(ArrayList<Cell> row : cells) {
             for(Cell cell : row) {
-                ogresCounter += cell.getOgresNummber();
+                ogresCounter += cell.getOgresNumber();
             }
         }
 
@@ -33,7 +33,7 @@ public class Map {
 
         for(ArrayList<Cell> row : cells) {
             for(Cell cell : row) {
-                elfsCounter += cell.getElfsNummber();
+                elfsCounter += cell.getElvesNumber();
             }
         }
 

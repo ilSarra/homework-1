@@ -13,7 +13,7 @@ public class Cell {
         terrain = null;
     }
 
-    public int getOgresNummber() {
+    public int getOgresNumber() {
         int ogresCounter = 0;
 
         for(Character character : characters) {
@@ -25,16 +25,16 @@ public class Cell {
         return ogresCounter;
     }
 
-    public int getElfsNummber() {
-        int elfsCounter = 0;
+    public int getElvesNumber() {
+        int elvesCounter = 0;
 
         for(Character character : characters) {
             if(character instanceof Elf) {
-                elfsCounter++;
+                elvesCounter++;
             }
         }
 
-        return elfsCounter;
+        return elvesCounter;
     }
 
     public int getDwarfsNummber() {
