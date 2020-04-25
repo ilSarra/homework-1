@@ -1,5 +1,7 @@
 import java.util.LinkedList;
 
+import javax.naming.LimitExceededException;
+
 public class Cell {
     private LinkedList<Character> characters;
     private String terrain;
@@ -7,6 +9,14 @@ public class Cell {
     public Cell() {
         characters = new LinkedList<>();
         terrain = null;
+    }
+
+    public void addCharacter(Character character) throws LimitExceededException {
+        if(characters.size() >= 5) {
+            throw new LimitExceededException();
+        }
+
+        this.characters.add(character);
     }
 
     public LinkedList<Character> getCharacters() {
