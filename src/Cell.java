@@ -38,11 +38,7 @@ public class Cell {
             return false;
         }
 
-        if(!(terrain.equals("pianura") || terrain.equals("bosco") || terrain.equals("montagna"))) {
-            return false;
-        }
-
-        return true;
+        return terrain.equals("pianura") || terrain.equals("bosco") || terrain.equals("montagna");
     }
 
     private boolean isValid(LinkedList<Character> characters) {
@@ -50,10 +46,6 @@ public class Cell {
             return false;
         }
 
-        if(characters.size() > 5) {
-            return false;
-        }
-
-        return true;
+        return characters.size() <= 5;
     }
 }
