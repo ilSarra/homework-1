@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 
 public class Map {
@@ -28,16 +29,16 @@ public class Map {
         return ogresCounter;
     }
 
-    public int getElfsNumber() {
-        int elfsCounter = 0;
+    public int getElvesNumber() {
+        int elvesCounter = 0;
 
         for(ArrayList<Cell> row : cells) {
             for(Cell cell : row) {
-                elfsCounter += cell.getElvesNumber();
+                elvesCounter += cell.getElvesNumber();
             }
         }
 
-        return elfsCounter;
+        return elvesCounter;
     }
 
     public int getDwarfsNumber() {
@@ -62,6 +63,7 @@ public class Map {
                 double dayDefence = cell.getDayDefence();
 
                 if(dayDefence > maxDefence) {
+                    maxDefence = dayDefence;
                     cellCoordinates.clear();
                     cellCoordinates.add(new CellCoordinates(cell, x, y));
                 }
@@ -85,6 +87,7 @@ public class Map {
                 double nightDefence = cell.getNightDefence();
 
                 if(nightDefence > maxDefence) {
+                    maxDefence = nightDefence;
                     cellCoordinates.clear();
                     cellCoordinates.add(new CellCoordinates(cell, x, y));
                 }
@@ -108,6 +111,7 @@ public class Map {
                 double dayAttack = cell.getDayAttack();
 
                 if(dayAttack > maxAttack) {
+                    maxAttack = dayAttack;
                     cellCoordinates.clear();
                     cellCoordinates.add(new CellCoordinates(cell, x, y));
                 }
@@ -131,11 +135,37 @@ public class Map {
                 double nightAttack = cell.getNightAttack();
 
                 if(nightAttack > maxAttack) {
+                    maxAttack = nightAttack;
                     cellCoordinates.clear();
                     cellCoordinates.add(new CellCoordinates(cell, x, y));
                 }
 
                 else if(nightAttack == maxAttack && maxAttack != 0) {
+                    cellCoordinates.add(new CellCoordinates(cell, x, y));
+                }
+            }
+        }
+
+        return cellCoordinates;
+    }
+
+    public LinkedList<CellCoordinates> getMaxCharacterTypeCell() {
+        LinkedList<CellCoordinates> cellCoordinates = new LinkedList<>();
+        int maxCounter = 0;
+
+        for(int y = 0; y < height; y++) {
+            for(int x = 0; x < width; x++) {
+                Cell cell = cells.get(y).get(x);
+                int[] counters = { cell.getOgresNumber(), cell.getDwarfsNummber(), cell.getElvesNumber() };
+                Arrays.sort(counters);
+
+                if(counters[2] > maxCounter) {
+                    cellCoordinates.clear();
+                    maxCounter = counters[2];
+                    cellCoordinates.add(new CellCoordinates(cell, x, y));
+                }
+
+                else if(counters[2] == maxCounter) {
                     cellCoordinates.add(new CellCoordinates(cell, x, y));
                 }
             }
