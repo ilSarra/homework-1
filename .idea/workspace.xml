@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d4c4816-c6c9-4939-9f04-36fcd958ae55" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pedine.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mappa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mappa.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CellCoordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CellCoordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MapBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mappa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mappa.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587820201166</updated>
       <workItem from="1587820204771" duration="87000" />
-      <workItem from="1587909064524" duration="6789000" />
+      <workItem from="1587909064524" duration="9359000" />
     </task>
     <task id="LOCAL-00001" summary="Typo error fix">
       <created>1587840559596</created>
@@ -91,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587913864071</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Bug fixed and started testing">
+      <created>1587915972806</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587915972806</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,7 +111,8 @@
     <MESSAGE value="Typo error fix" />
     <MESSAGE value="Finished writing Map" />
     <MESSAGE value="MapBuilder: buildMap method" />
-    <option name="LAST_COMMIT_MESSAGE" value="MapBuilder: buildMap method" />
+    <MESSAGE value="Bug fixed and started testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixed and started testing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="997" y="210" key="#Main" timestamp="1587913906105">
@@ -112,10 +123,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1587820273273" />
-    <state x="905" y="134" key="CommitChangelistDialog2" timestamp="1587913862492">
+    <state x="1047" y="343" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587921624634">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="905" y="134" key="CommitChangelistDialog2/0.0.2560.1080@0.0.2560.1080" timestamp="1587913862492" />
+    <state x="1047" y="343" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1080@0.0.2560.1080" timestamp="1587921624634" />
+    <state x="905" y="134" key="CommitChangelistDialog2" timestamp="1587915971101">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="905" y="134" key="CommitChangelistDialog2/0.0.2560.1080@0.0.2560.1080" timestamp="1587915971101" />
     <state width="391" height="466" key="DebuggerActiveHint" timestamp="1587914150957">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -124,42 +139,42 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1587820242097" />
-    <state width="2517" height="314" key="GridCell.Tab.0.bottom" timestamp="1587915629867">
+    <state width="2517" height="295" key="GridCell.Tab.0.bottom" timestamp="1587922229622">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="314" key="GridCell.Tab.0.bottom/0.0.2560.1080@0.0.2560.1080" timestamp="1587915629867" />
-    <state width="2517" height="314" key="GridCell.Tab.0.center" timestamp="1587915629867">
+    <state width="2517" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080@0.0.2560.1080" timestamp="1587922229622" />
+    <state width="2517" height="295" key="GridCell.Tab.0.center" timestamp="1587922229622">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="314" key="GridCell.Tab.0.center/0.0.2560.1080@0.0.2560.1080" timestamp="1587915629867" />
-    <state width="2517" height="314" key="GridCell.Tab.0.left" timestamp="1587915629867">
+    <state width="2517" height="295" key="GridCell.Tab.0.center/0.0.2560.1080@0.0.2560.1080" timestamp="1587922229622" />
+    <state width="2517" height="295" key="GridCell.Tab.0.left" timestamp="1587922229622">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="314" key="GridCell.Tab.0.left/0.0.2560.1080@0.0.2560.1080" timestamp="1587915629867" />
-    <state width="2517" height="314" key="GridCell.Tab.0.right" timestamp="1587915629867">
+    <state width="2517" height="295" key="GridCell.Tab.0.left/0.0.2560.1080@0.0.2560.1080" timestamp="1587922229622" />
+    <state width="2517" height="295" key="GridCell.Tab.0.right" timestamp="1587922229622">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="314" key="GridCell.Tab.0.right/0.0.2560.1080@0.0.2560.1080" timestamp="1587915629867" />
-    <state width="2517" height="314" key="GridCell.Tab.1.bottom" timestamp="1587915629867">
+    <state width="2517" height="295" key="GridCell.Tab.0.right/0.0.2560.1080@0.0.2560.1080" timestamp="1587922229622" />
+    <state width="2517" height="314" key="GridCell.Tab.1.bottom" timestamp="1587921911784">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="314" key="GridCell.Tab.1.bottom/0.0.2560.1080@0.0.2560.1080" timestamp="1587915629867" />
-    <state width="2517" height="314" key="GridCell.Tab.1.center" timestamp="1587915629867">
+    <state width="2517" height="314" key="GridCell.Tab.1.bottom/0.0.2560.1080@0.0.2560.1080" timestamp="1587921911784" />
+    <state width="2517" height="314" key="GridCell.Tab.1.center" timestamp="1587921911784">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="314" key="GridCell.Tab.1.center/0.0.2560.1080@0.0.2560.1080" timestamp="1587915629867" />
-    <state width="2517" height="314" key="GridCell.Tab.1.left" timestamp="1587915629867">
+    <state width="2517" height="314" key="GridCell.Tab.1.center/0.0.2560.1080@0.0.2560.1080" timestamp="1587921911784" />
+    <state width="2517" height="314" key="GridCell.Tab.1.left" timestamp="1587921911784">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="314" key="GridCell.Tab.1.left/0.0.2560.1080@0.0.2560.1080" timestamp="1587915629867" />
-    <state width="2517" height="314" key="GridCell.Tab.1.right" timestamp="1587915629867">
+    <state width="2517" height="314" key="GridCell.Tab.1.left/0.0.2560.1080@0.0.2560.1080" timestamp="1587921911784" />
+    <state width="2517" height="314" key="GridCell.Tab.1.right" timestamp="1587921911784">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="314" key="GridCell.Tab.1.right/0.0.2560.1080@0.0.2560.1080" timestamp="1587915629867" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1587840561768">
+    <state width="2517" height="314" key="GridCell.Tab.1.right/0.0.2560.1080@0.0.2560.1080" timestamp="1587921911784" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1587915976059">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080@0.0.2560.1080" timestamp="1587840561768" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080@0.0.2560.1080" timestamp="1587915976059" />
     <state x="1089" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587910192860">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -178,18 +193,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/MapBuilder.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/MapBuilder.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/MapBuilder.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="4" />
+          <line>47</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,0 +1,10 @@
+0 0 orco
+2 2 orco
+3 0 orco
+1 2 elfo
+1 1 nano
+2 2 orco
+1 0 elfo
+1 0 nano
+3 0 elfo
+1 2 nano

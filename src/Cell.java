@@ -138,6 +138,12 @@ public class Cell {
     }
 
     public String toString() {
-        return terrain;
+        StringBuilder toString = new StringBuilder(terrain);
+
+        for(Character character : characters) {
+            toString.append(" " + character);
+        }
+
+        return toString.toString();
     }
 }

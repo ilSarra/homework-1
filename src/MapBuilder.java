@@ -43,4 +43,46 @@ public class MapBuilder {
 
         return map;
     }
+
+    public static void addCharacters(Map map, File inputFile) throws IllegalArgumentException, FileNotFoundException, WrongFileFormatException {
+        if(inputFile == null || map == null) {
+            throw new IllegalArgumentException();
+        }
+
+        if(!inputFile.exists() || !inputFile.canRead()) {
+            throw new FileNotFoundException();
+        }
+
+        Scanner scanner = new Scanner(inputFile);
+
+        while(scanner.hasNextLine()) {
+            try {
+                int x = scanner.nextInt();
+                int y = scanner.nextInt();
+                String type = scanner.next();
+
+                Character character = null;
+
+                switch (type.toLowerCase()) {
+                    case "orco":
+                        character = new Ogre();
+                        break;
+                    case "nano":
+                        character = new Dwarf();
+                        break;
+                    case "elfo":
+                        character = new Elf();
+                        break;
+                }
+
+                if(character == null) {
+                    throw new WrongFileFormatException();
+                }
+
+                map.addCharacterToCell(x, y, character);
+            } catch(Exception exception) {
+                throw new WrongFileFormatException();
+            }
+        }
+    }
 }

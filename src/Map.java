@@ -1,3 +1,4 @@
+import javax.naming.LimitExceededException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -182,6 +183,14 @@ public class Map {
         }
 
         return cellCoordinates;
+    }
+
+    public void addCharacterToCell(int x, int y, Character character) throws IllegalArgumentException, LimitExceededException {
+        if(!isValid(x, y)) {
+            throw new IllegalArgumentException();
+        }
+
+        cells.get(y).get(x).addCharacter(character);
     }
 
     public void setCell(int x, int y, Cell cell) throws IllegalArgumentException {

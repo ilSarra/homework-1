@@ -1,4 +1,4 @@
-4 2
+4 3
 0 0 pianura
 1 0 pianura
 1 1 bosco
@@ -7,3 +7,7 @@
 2 1 bosco
 3 1 montagna
 0 1 pianura
+0 2 montagna
+1 2 montagna
+2 2 montagna
+3 2 bosco
