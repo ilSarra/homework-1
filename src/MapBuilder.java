@@ -28,21 +28,18 @@ public class MapBuilder {
         map = new Map(width, height);
 
         for(int i = 0; i < width * height; i++) {
-            int x, y = -1;
-            String terrain = null;
-
             try {
-                x = scanner.nextInt();
-                y = scanner.nextInt();
-                terrain = scanner.next();
+                int x = scanner.nextInt();
+                int y = scanner.nextInt();
+                String terrain = scanner.next();
+
+                map.setCell(x, y, new Cell(terrain));
             } catch(Exception exception) {
                 throw new WrongFileFormatException();
             }
-
-            map.setCell(x, y, new Cell(terrain));
         }
 
-        scanner.close();
+        scanner.close();;
 
         return map;
     }

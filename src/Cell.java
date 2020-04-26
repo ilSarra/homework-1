@@ -10,7 +10,7 @@ public class Cell {
 
     public Cell(String terrain) {
         characters = new LinkedList<>();
-        terrain = null;
+        this.terrain = new String(terrain);
     }
 
     public int getOgresNumber() {

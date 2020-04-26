@@ -16,8 +16,14 @@ public class Map {
         this.height = height;
         cells = new ArrayList<>(height);
 
-        for(ArrayList<Cell> row : cells) {
-            row = new ArrayList<Cell>(width);
+        for(int y = 0; y < height; y++) {
+            ArrayList<Cell> row = new ArrayList<>();
+
+            for(int x = 0; x < width; x++) {
+                row.add(null);
+            }
+
+            cells.add(row);
         }
     }
 
