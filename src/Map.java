@@ -7,7 +7,11 @@ public class Map {
     private int height;
     private ArrayList<ArrayList<Cell>> cells;
 
-    public Map(int width, int height) {
+    public Map(int width, int height) throws IllegalArgumentException {
+        if(!(width > 0 && height > 0)) {
+            throw new IllegalArgumentException();
+        }
+
         this.width = width;
         this.height = height;
         cells = new ArrayList<>(height);
@@ -184,5 +188,17 @@ public class Map {
 
     private boolean isValid(int x, int y) {
         return x >= 0 && x < this.width && y >= 0 && y <= this.height;
+    }
+
+    public String toString() {
+        String toString = "";
+
+        for(int y = 0; y < height; y++) {
+            for(int x = 0; x < width; x++) {
+                toString += "(" + x + ", " + y + ") " + cells.get(y).get(x) + "\n";
+            }
+        }
+
+        return toString;
     }
 }

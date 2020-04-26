@@ -8,7 +8,7 @@ public class Cell {
     private int x;
     private int y;
 
-    public Cell(int x, int y, String terrain) {
+    public Cell(String terrain) {
         characters = new LinkedList<>();
         terrain = null;
     }
@@ -135,5 +135,9 @@ public class Cell {
         }
 
         return characters.size() <= 5;
+    }
+
+    public String toString() {
+        return terrain;
     }
 }
