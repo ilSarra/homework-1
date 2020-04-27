@@ -8,3 +8,5 @@
 1 0 nano
 3 0 elfo
 1 2 nano
+1 2 elfo
+2 2 elfo

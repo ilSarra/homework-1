@@ -57,7 +57,7 @@ public class Map {
 
         for(ArrayList<Cell> row : cells) {
             for(Cell cell : row) {
-                dwarfsCounter += cell.getDwarfsNummber();
+                dwarfsCounter += cell.getDwarfsNumber();
             }
         }
 
@@ -167,7 +167,7 @@ public class Map {
         for(int y = 0; y < height; y++) {
             for(int x = 0; x < width; x++) {
                 Cell cell = cells.get(y).get(x);
-                int[] counters = { cell.getOgresNumber(), cell.getDwarfsNummber(), cell.getElvesNumber() };
+                int[] counters = { cell.getOgresNumber(), cell.getDwarfsNumber(), cell.getElvesNumber() };
                 Arrays.sort(counters);
 
                 if(counters[2] > maxCounter) {

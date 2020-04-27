@@ -8,7 +8,15 @@ public class Cell {
     private int x;
     private int y;
 
-    public Cell(String terrain) {
+    public Cell(String terrain) throws IllegalArgumentException {
+        if(terrain == null) {
+            throw new IllegalArgumentException();
+        }
+
+        if(!terrain.equals("pianura") && !terrain.equals("bosco") && !terrain.equals("montagna")) {
+            throw new IllegalArgumentException();
+        }
+
         characters = new LinkedList<>();
         this.terrain = new String(terrain);
     }
@@ -37,7 +45,7 @@ public class Cell {
         return elvesCounter;
     }
 
-    public int getDwarfsNummber() {
+    public int getDwarfsNumber() {
         int dwarfsCounter = 0;
 
         for(Character character : characters) {

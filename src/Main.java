@@ -24,7 +24,7 @@ public class Main {
             System.out.println("File " + mapInputPath + " non trovato.");
             return;
         } catch(WrongFileFormatException exception) {
-            System.out.println("Il file " + mapInputPath + " è di un formato non valido");
+            System.out.println("Il file " + mapInputPath + " è di un formato non supportato oppure contiene un errore.");
             return;
         }
 
@@ -37,12 +37,19 @@ public class Main {
             System.out.println("File " + charactersInputPath + " non trovato.");
             return;
         } catch(WrongFileFormatException exception) {
-            System.out.println("Il file " + charactersInputPath + " è di un formato non valido");
+            System.out.println("Il file " + charactersInputPath + " è di un formato non valido oppure contiene un errore.");
             return;
         }
 
         System.out.println(map);
 
+        System.out.println("Numero di Elfi nella mappa: " + map.getElvesNumber());
+        System.out.println("Numero di Nani nella mappa: " + map.getDwarfsNumber());
+        System.out.println("Numero di Orchi nella mappa: " + map.getOgresNumber());
         System.out.println("Casella con maggior valore di difesa di giorno: " + map.getMaxDayDefenceCell());
+        System.out.println("Casella con maggior valore di difesa di notte: " + map.getMaxNightDefenceCell());
+        System.out.println("Casella con maggior valore di attacco di giorno: " + map.getMaxDayAttackCell());
+        System.out.println("Casella con maggior valore di attacco di notte: " + map.getMaxNightAttackCell());
+        System.out.println("Casella con maggior numero di pezzi dello stesso tipo: " + map.getMaxCharacterTypeCell());
     }
 }
