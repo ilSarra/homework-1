@@ -40,6 +40,10 @@ public class MapBuilder {
 
         scanner.close();;
 
+        if(!map.isValid()) {
+            throw new WrongFileFormatException();
+        }
+
         return map;
     }
 

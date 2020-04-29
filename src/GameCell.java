@@ -146,12 +146,16 @@ public class GameCell implements Cell {
     }
 
     public String toString() {
-        StringBuilder toString = new StringBuilder(terrain);
+        String toString = "Terreno: " + terrain;
+        toString += "\nElfi: " + getElvesNumber();
+        toString += "\nNani: " + getDwarfsNumber();
+        toString += "\nOrchi: " + getOgresNumber();
+        toString += "\nTotale personaggi: " + characters.size();
+        toString += "\nAttacco totale di giorno: " + getDayAttack();
+        toString += "\nDifesa totale di giorno: " + getDayDefence();
+        toString += "\nAttacco totale di notte: " + getNightAttack();
+        toString += "\nDifesa totale di notte: " + getNightDefence();
 
-        for(Character character : characters) {
-            toString.append(" " + character);
-        }
-
-        return toString.toString();
+        return toString;
     }
 }

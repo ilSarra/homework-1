@@ -23,6 +23,6 @@ public class CellCoordinates {
     }
 
     public String toString() {
-        return "(" + x + ", " + y + ")";
+        return "(" + x + ", " + y + ")\n" + cell;
     }
 }
