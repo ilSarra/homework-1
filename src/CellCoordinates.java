@@ -1,16 +1,16 @@
 
 public class CellCoordinates {
-    private Cell cell;
+    private GameCell cell;
     private int x;
     private int y;
 
-    public CellCoordinates(Cell cell, int x, int y) {
+    public CellCoordinates(GameCell cell, int x, int y) {
         this.cell = cell;
         this.x = x;
         this.y = y;
     }
 
-    public Cell getCell() {
+    public GameCell getCell() {
         return cell;
     }
 

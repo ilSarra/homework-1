@@ -13,7 +13,7 @@ public class Main {
 
         File mapInput = new File(mapInputPath);
         File charactersInput = new File(charactersInputPath);
-        Map map = null;
+        GameMap map = null;
 
         try {
             map = MapBuilder.buildMap(mapInput);

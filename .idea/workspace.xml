@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d4c4816-c6c9-4939-9f04-36fcd958ae55" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework-1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GameCell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GameMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mappa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/mappa.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pedine.txt" beforeDir="false" afterPath="$PROJECT_DIR$/input/pedine.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CellCoordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CellCoordinates.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MapBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MapBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -33,6 +39,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -75,7 +82,8 @@
       <updated>1587820201166</updated>
       <workItem from="1587820204771" duration="87000" />
       <workItem from="1587909064524" duration="9465000" />
-      <workItem from="1587991451152" duration="1596000" />
+      <workItem from="1587991451152" duration="2876000" />
+      <workItem from="1588146399741" duration="623000" />
     </task>
     <task id="LOCAL-00001" summary="Typo error fix">
       <created>1587840559596</created>
@@ -112,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587922321018</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Everything seems working">
+      <created>1587993082945</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587993082945</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +139,8 @@
     <MESSAGE value="MapBuilder: buildMap method" />
     <MESSAGE value="Bug fixed and started testing" />
     <MESSAGE value="MapBuilder: completed&#10;More testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="MapBuilder: completed&#10;More testing" />
+    <MESSAGE value="Everything seems working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Everything seems working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="997" y="210" key="#Main" timestamp="1587992275175">
@@ -139,10 +155,14 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1047" y="343" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1080@0.0.2560.1080" timestamp="1587921624634" />
-    <state x="905" y="134" key="CommitChangelistDialog2" timestamp="1587922319377">
+    <state x="737" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588146885950">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="905" y="134" key="CommitChangelistDialog2/0.0.2560.1080@0.0.2560.1080" timestamp="1587922319377" />
+    <state x="737" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1080@0.0.2560.1080" timestamp="1588146885950" />
+    <state x="905" y="134" key="CommitChangelistDialog2" timestamp="1588147034536">
+      <screen x="0" y="0" width="2560" height="1080" />
+    </state>
+    <state x="905" y="134" key="CommitChangelistDialog2/0.0.2560.1080@0.0.2560.1080" timestamp="1588147034536" />
     <state width="391" height="466" key="DebuggerActiveHint" timestamp="1587914150957">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -151,22 +171,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1587820242097" />
-    <state width="2517" height="295" key="GridCell.Tab.0.bottom" timestamp="1587993061509">
+    <state width="1234" height="335" key="GridCell.Tab.0.bottom" timestamp="1588147056283">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.bottom/0.0.2560.1080@0.0.2560.1080" timestamp="1587993061509" />
-    <state width="2517" height="295" key="GridCell.Tab.0.center" timestamp="1587993061509">
+    <state width="1234" height="335" key="GridCell.Tab.0.bottom/0.0.2560.1080@0.0.2560.1080" timestamp="1588147056283" />
+    <state width="1234" height="335" key="GridCell.Tab.0.center" timestamp="1588147056283">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.center/0.0.2560.1080@0.0.2560.1080" timestamp="1587993061509" />
-    <state width="2517" height="295" key="GridCell.Tab.0.left" timestamp="1587993061509">
+    <state width="1234" height="335" key="GridCell.Tab.0.center/0.0.2560.1080@0.0.2560.1080" timestamp="1588147056283" />
+    <state width="1234" height="335" key="GridCell.Tab.0.left" timestamp="1588147056282">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.left/0.0.2560.1080@0.0.2560.1080" timestamp="1587993061509" />
-    <state width="2517" height="295" key="GridCell.Tab.0.right" timestamp="1587993061509">
+    <state width="1234" height="335" key="GridCell.Tab.0.left/0.0.2560.1080@0.0.2560.1080" timestamp="1588147056282" />
+    <state width="1234" height="335" key="GridCell.Tab.0.right" timestamp="1588147056283">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state width="2517" height="295" key="GridCell.Tab.0.right/0.0.2560.1080@0.0.2560.1080" timestamp="1587993061509" />
+    <state width="1234" height="335" key="GridCell.Tab.0.right/0.0.2560.1080@0.0.2560.1080" timestamp="1588147056283" />
     <state width="2517" height="314" key="GridCell.Tab.1.bottom" timestamp="1587922332762">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -183,18 +203,18 @@
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state width="2517" height="314" key="GridCell.Tab.1.right/0.0.2560.1080@0.0.2560.1080" timestamp="1587922332762" />
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1587922323017">
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2" timestamp="1587993085338">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080@0.0.2560.1080" timestamp="1587922323017" />
+    <state x="872" y="273" key="Vcs.Push.Dialog.v2/0.0.2560.1080@0.0.2560.1080" timestamp="1587993085338" />
     <state x="1089" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587910192860">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
     <state x="1089" y="457" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1080@0.0.2560.1080" timestamp="1587910192860" />
-    <state x="1010" y="306" key="extract.method.dialog" timestamp="1587910146703">
+    <state x="1010" y="306" key="extract.method.dialog" timestamp="1587993140904">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
-    <state x="1010" y="306" key="extract.method.dialog/0.0.2560.1080@0.0.2560.1080" timestamp="1587910146703" />
+    <state x="1010" y="306" key="extract.method.dialog/0.0.2560.1080@0.0.2560.1080" timestamp="1587993140904" />
     <state x="936" y="250" width="672" height="677" key="run.anything.popup" timestamp="1587910265708">
       <screen x="0" y="0" width="2560" height="1080" />
     </state>
@@ -205,7 +225,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/MapBuilder.java</url>
-          <line>47</line>
+          <line>46</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
