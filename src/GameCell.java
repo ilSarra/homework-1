@@ -5,8 +5,6 @@ import javax.naming.LimitExceededException;
 public class GameCell implements Cell {
     private LinkedList<Character> characters;
     private String terrain;
-    private int x;
-    private int y;
 
     public GameCell(String terrain) throws IllegalArgumentException {
         if(terrain == null) {
